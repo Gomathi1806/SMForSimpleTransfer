@@ -34,3 +34,8 @@ def send_to_savings(amount):
 
 if __name__ == "__main__":
     watch_for_income()
+
+
+/* note: Have to replace the fields with actual account addresses, contract ABI and other details. This code has to be run on a server machine and continuously watches for balance changes in the specified account. If it identifies income was received by the watched account, it calculates the savings portion and calls the `SavingsContract` to transfer funds.
+
+/* Note: To handle exceptions and errors wherever required as unhandled exceptions can cause the script to stop. It's also advisable in production scenarios to encrypt sensitive data like private keys.
