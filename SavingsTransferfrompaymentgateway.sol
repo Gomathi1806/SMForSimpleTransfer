@@ -38,3 +38,7 @@ contract PaymentGateway {
         savingsPercent = _newSavingsPercent;
     }
 }
+
+
+// Note: provides a payment gateway where the funds are split into savings and the rest. Whenever a payment is made to this contract, the amount is automatically distributed according to the predefined percentage.
+// we can implement this contract by setting up external oracle server like chain link keepers and off-chain oracle server should have ether to pay the transaction fee.
